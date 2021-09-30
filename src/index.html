@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>기초웹 과제</title>
+</head>
+<body>
+<header>
+    <h1>기초웹과제</h1>
+</header>
+<aside class="sidebar">
+    <ol>
+        <li><a href="#license">라이센스</a></li>
+        <li><a href="#shortcut">단축키</a></li>
+    </ol>
+</aside>
+
+<section class="container col">
+    <article>
+        <header><h2 id="license">IntelliJ Ultimate 설치 및 학생인증</h2></header>
+        <h3>IntelliJ 버전</h3>
+        <p>인텔리제이는 무료 버전인 Community 버전과 Ultimate버전이 있습니다. Community
+            버전으로도 Java 개발을할 수 있지만 eclipse로 Maven프로젝트를 해보신 분이라면 아시겠지만 설정이 매우 복잡해집니다. 하지만 Ultimate 버전을 사용하게되면 백엔드 작업을 위한
+            Spring, Java EE 뿐만 아니라 DB도구, 쿠버네티스관련 기능 그리고 JS개발기능까지 지원합니다. 따라서 웹 프로젝트를 하신다면 Ultimate버전을 사용하는것이 편리합니다.</p>
+        <figure>
+            <img src="<%=require('./image/differ.png')%>" alt="error" width="300px" height="auto"/>
+            <figcaption>버전별 IDEA 기능 차이</figcaption>
+        </figure>
+        </p>
+        <h3>학생인증</h3>
+        <ol>
+            <li>
+                아래 링크를 통해 Jetbrains 학생인증 페이지에 접속하여 &quot;Apply now&quot; 클릭
+                <p><a
+                        href="https://www.jetbrains.com/community/education/#students">https://www.jetbrains.com/community/education/#students</a>
+                </p>
+            </li>
+
+            <li>학교 이메일 정보 입력 및 신청</li>
+
+            <li>입력한 학교 이메일에 온 인증메일에서 &quot;Confirm Request&quot; 클릭</li>
+
+            <li>링크를 누르면 JetBrains페이지로 넘어가 &quot;I Accept&quot;를 클릭</li>
+
+            <li>회원 가입이 되어있지 않은 경우 회원 가입 진행</li>
+
+            <li>회원 가입 완료 후 가입한 이메일에 메일을 확인하여 &quot;Confirm your account&quot;클릭</li>
+
+            <li>나머지 정보를 입력하여 회원 가입 완료</li>
+
+            <li>JetBrains 로그인하여 라이센스 확인</li>
+        </ol>
+
+        <h3 >IntelliJ Ultimate 설치</h3>
+        <ol>
+            <li>
+                아래의 링크로 가서 Ultimate 버전을 다운받습니다.
+                <p><a
+                        href="https://www.jetbrains.com/idea/download/#section=windows">https://www.jetbrains.com/idea/download/#section=windows</a>
+                </p>
+            </li>
+
+
+            <li>최초 인증 계정 정보 입력으로 인증 완료</li>
+        </ol>
+    </article>
+
+    <article>
+        <header><h2 id="shortcut">IntelliJ IDEA 단축키 15가지</h2></header>
+        <h3>단축키 목록</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>단축키</th>
+                <th>설명</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alt + Enter</td>
+                <td>현재 커서에서 발견된 오류, 경고, 제안에 대한 수정안을 제안</td>
+            </tr>
+            <tr>
+                <td>F2</td>
+                <td>다음 오류, 경고, 제안으로 점프</td>
+            </tr>
+            <tr>
+                <td>Alt + 1</td>
+                <td>Project창을 열어주고 커서를 Project창으로 이동</td>
+            </tr>
+            <tr>
+                <td>Esc</td>
+                <td>에디터로 커서를 이동</td>
+            </tr>
+            <tr>
+                <td>Ctrl + E</td>
+                <td>최근 열어본 파일을 보여줌</td>
+            </tr>
+            <tr>
+                <td>Ctrl + B</td>
+                <td>심볼의 선언 위치로 이동</td>
+            </tr>
+            <tr>
+                <td>Alt + F7</td>
+                <td>해당 심볼의 사용처를 보여줌</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Ctrl</td>
+                <td>자신이 원하는 것을 실행</td>
+            </tr>
+            <tr>
+                <td>Ctrl + W/ Shift + Ctrl + W</td>
+                <td>해당 코드를 감싸는 코드를 선택해준다(Shift를 누르면 반대로)</td>
+            </tr>
+            <tr>
+                <td>Ctrl + /</td>
+                <td>해당 줄을 주석으로 만듦(여러 줄을 선택했을 경우 블록주석)</td>
+            </tr>
+            <tr>
+                <td>Shift + Ctrl + Enter</td>
+                <td>자동 완성</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Alt + L</td>
+                <td>코드이 스타일을 맞춰준다(띄어쓰기, 화살함수 사용 등)</td>
+            </tr>
+            <tr>
+                <td>Shift + Ctrl + Alt + T</td>
+                <td>리팩토링(심볼을 하나하나 바꾸지 않고 한번에 바꾸거나 파라미터를 바꾸는 등)</td>
+            </tr>
+            <tr>
+                <td>Shift + Ctrl + A</td>
+                <td>Actions 검색</td>
+            </tr>
+            <tr>
+                <td>Shift + Shift</td>
+                <td>전체 검색, 모든 항목에 대한 검색</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
