@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+</head>
+<style>
+    wrapper {
+        display: flex;
+        width: 960px;
+        height: 670px;
+        flex-direction: column;
+        margin:0 auto;
+    }
+    header{
+        height: 120px;
+        background-color: #066cfa;
+        border-bottom: solid black;
+        box-sizing: border-box;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+    .content {
+        flex: 1;
+        flex-basis: 600px;
+        padding: 15px;
+        background-color: #ffd800;
+    }
+    aside {
+        flex: 1;
+        padding: 15px;
+        flex-basis: 300px;
+        background-color: #00ff90;
+    }
+    footer {
+        margin-top: auto;
+        height: 120px;
+        background-color: #c3590a;
+    }
+    @media all and (max-width: 768px) {
+        header, footer {
+            width: 100%;
+            height: 10%;
+        }
+        .content {
+            height: 50%;
+        }
+        article {
+            flex-direction: column;
+        }
+    }
+    @media all and (min-width: 1025px) {
+        header, footer {
+            width: 100%;
+        }
+        .content {
+            width: 50%;
+        }
+        article {
+            flex: 1 1;
+        }
+    }
+</style>
+<body>
+    <main id="wrapper">
+        <header>
+            <h1>header</h1>
+            <p>
+                width = 960px, height = 120px
+                <br>
+                background-color: #066cfa, border-bottom: solid black
+            </p>
+        </header>
+        <article>
+            <section class="content left-side">
+                <h4>본문</h4>
+                <p>
+                    width = 600px
+                    <br>
+                    height = 400px
+                    <br>
+                    background-color = #ffd800
+                    <br>
+                    padding = 15px
+                </p>
+            </section>
+            <aside>
+                <h4>사이드바</h4>
+                <p>
+                    width = 300px
+                    <br>
+                    height = 400px
+                    <br>
+                    background-color = #00ff90
+                    <br>
+                </p>
+            </aside>
+        </article>
+        <footer>푸터</footer>
+    </main>
+</body>
+</html>
